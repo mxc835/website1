@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterview Academy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('Background1.png') no-repeat center center/cover;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0,0,0,0.7);
+            padding: 15px 30px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffc107;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .main-content h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .buttons a {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            margin: 40px auto;
+        }
+
+        .carousel-track {
+            display: flex;
+            width: max-content;
+            animation: scroll 20s linear infinite;
+        }
+
+        .carousel-track img {
+            height: 100%;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Waterview Academy</a>
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Staff</a>
+            <a href="#">Student Portal</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Coming Soon!</h1>
+        <p>Waterview Academy</p>
+        <p>Giving the Roblox community a safe space to learn</p>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <img src="Background1.png" alt="Slide 1">
+            <img src="Test1.png" alt="Slide 2">
+            <img src="Test2.png" alt="Slide 3">
+            <img src="Test3.png" alt="Slide 4">
+            <img src="Test4.png" alt="Slide 5">
+            <!-- Add or remove images as needed -->
+        </div>
+    </div>
+</body>
+</html>
